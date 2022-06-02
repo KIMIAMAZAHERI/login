@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Poke from "./images/poke.png";
+import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+     <div className='sub-main'>
+       <div>
+          <div className='imgs'>
+            <div className='container-image'>
+            <img src={Poke} alt="picture of charmander" className='poke'></img>
+            </div>
+       </div>
+       <div>
+         <h1>Login page</h1>
+         <Login />
+       </div>
+       </div>
+     </div>
     </div>
   );
 }
