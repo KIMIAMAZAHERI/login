@@ -31,7 +31,7 @@ const Login = ()=>{
                 if (email === 'admin@demo.com'){
                     setEmailError('');
                     if(password === 'demo'){
-                        setSuccessmsg('You are successfully loggrd in ');
+                        setSuccessmsg('You are successfully logged in ');
                     }else{
                         setEmailError('Password does not match with the email address');
                     }
